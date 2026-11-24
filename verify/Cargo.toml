@@ -1,0 +1,19 @@
+[package]
+name = "verify"
+version = "0.1.0"
+edition = "2021"
+
+# Standalone crate: shares no code with ../src and has no dependencies.
+[workspace]
+
+[features]
+# 5x5x5 board instead of 6x6x6 (geometry.rs SIDE)
+n5 = []
+
+[dependencies]
+
+[profile.release]
+opt-level = 3
+
+[profile.dev]
+opt-level = 2

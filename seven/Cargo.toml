@@ -1,0 +1,10 @@
+[package]
+name = "seven"
+version = "0.1.0"
+edition = "2021"
+description = "Independent re-check and analysis of the 7x7x7 Maker-Breaker proof of Cain, Raymond, and Kallersjo (arXiv:2509.21494)"
+
+[dependencies]
+
+[profile.release]
+opt-level = 3
